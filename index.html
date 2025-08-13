@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .logonav {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .mynav {
+            background-color: #f8f8f9;
+        }
+
+        .myitem {
+            margin: 0 20px;
+        }
+
+        .mylink {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .mylink:hover {
+            background-color: rgb(209, 227, 246);
+            padding: 5px;
+        }
+
+        .carousel {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+
+        .carousel-item {
+            height: 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .para-container1 {
+            padding: 120px 0px 100px 150px;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            background-color: rgb(224, 246, 253);
+        }
+
+        .p1 {
+            font-size: 20px;
+            line-height: 1.75;
+            text-align: justify;
+            max-width: 600px;
+            vertical-align: baseline;
+        }
+
+        .image-block {
+            display: flex;
+            width: 100%;
+            gap: 30px;
+            justify-content: center;
+            padding: 10%;
+        }
+
+        .imgb {
+            height: 50%;
+            width: 50%;
+        }
+
+
+
+        @media (max-width: 500px) {
+            .para-container1 {
+                flex-direction: column;
+                gap: 0;
+                padding-left: 10px;
+                max-width: auto;
+            }
+
+            .p1 {
+                text-align: left;
+            }
+
+            .image-block {
+                flex-direction: column;
+                width: auto;
+            }
+
+            .imgb {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mynav">
+            <a class="navbar-brand" href="./index.html"><img class="logonav" src="./logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="myCarousel" class="carousel slide mb-6 carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner" onmouseover="onHover()" onmouseout="onOut()">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./carouselimg1.jpg" alt="Carousel Image 1">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 id="heading1"></h1>
+                        <p class="opacity-75" id="output1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" onmouseover="onHover" onmouseout="onOut()">
+                <img class="d-block w-100" src="./carouselimg2.jpg" alt=" Carousel Image 2">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 id="heading2"></h1>
+                        <p id="output2"></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" onmouseover="onHover()" onmouseout="onOut()">
+                <img class="d-block w-100" src="./carouselimg3.jpg" alt="Carousel Image 3">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1 id="heading3"></h1>
+                        <p id="output3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="para-container1">
+        <h2>ABOUT SRI LANKA</h2>
+        <p class="p1">Paradise is still the most commonly used word to describe Sri Lanka – a lush, tropical island of
+            golden
+            beaches
+            and brilliant blue waters. Visitors planning a Sri Lanka travel adventure can choose between a variety of
+            activities from lazing on the beach to diving in coral reefs and observing the wildlife to exploring ancient
+            temples and ruins.</p>
+    </div>
+
+    <div class="image-block">
+        <img src="./image1.jpg" class="imgb" alt="nine arch">
+        <img src="./image2.jpg" class="imgb" alt="fishing">
+    </div>
+
+    <div class="para-container1">
+        <h2>Why Ceylon Travels</h2>
+        <p class="p1">Book your next vacation and experience the Sri Lanka like never before with Ceylon Travels, the
+            premier
+            Travel Agent in Sri Lanka. </p>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Ceylon Travels, All Rights Reserved</p>
+
+            <a href="./index.html"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Bootstrap">
+                <img src="./logo.png" alt="logo" class="bi me-2" width="220px" height="200px" aria-hidden="true">
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="./tours.html" class="nav-link px-2 text-body-secondary">Tours</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function onHover() {
+            document.getElementById("heading1").innerHTML = "Journey Through History";
+            document.getElementById("output1").innerHTML = "Explore the ancient cities of Sigiriya and Anuradhapura. Discover centuries - old ruins, majestic temples, and the rich cultural heritage of Sri Lanka."
+            document.getElementById("heading2").innerHTML = "Discover Paradise on Earth";
+            document.getElementById("output2").innerHTML = "Sri Lanka's pristine beaches offer a perfect escape. From the golden sands of Unawatuna to the surf haven of Arugam Bay, there's a slice of paradise for everyone."
+            document.getElementById("heading3").innerHTML = "Adventure Awaits in the Highlands";
+            document.getElementById("output3").innerHTML = "Trek through the lush tea plantations of Nuwara Eliya and Ella. Experience breathtaking views, waterfalls, and the cool climate of Sri Lanka’s hill country."
+        }
+
+        function onOut() {
+            document.getElementById("heading1").innerHTML = "";
+            document.getElementById("output1").innerHTML = "";
+            document.getElementById("heading2").innerHTML = "";
+            document.getElementById("output2").innerHTML = "";
+            document.getElementById("heading3").innerHTML = "";
+            document.getElementById("output3").innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>

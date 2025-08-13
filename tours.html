@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .logonav {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .mynav {
+            background-color: #f8f8f9;
+        }
+
+        .myitem {
+            margin: 0 20px;
+        }
+
+        .mylink {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .mylink:hover {
+            background-color: rgb(209, 227, 246);
+            padding: 5px;
+        }
+
+        .cover-styles {
+            padding: 20%;
+            margin-left: 10%;
+        }
+
+        .cover-container {
+            background-image: url("./tourcover.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            color: white;
+        }
+
+        .para-container1 {
+            padding: 120px 0px 100px 150px;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            background-color: rgb(224, 246, 253);
+        }
+
+        .p1 {
+            font-size: 20px;
+            line-height: 1.75;
+            text-align: justify;
+            max-width: 600px;
+            vertical-align: baseline;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        @media (max-width: 500px) {
+            .para-container1 {
+                flex-direction: column;
+                gap: 0;
+                padding-left: 10px;
+                max-width: auto;
+            }
+
+            .p1 {
+                text-align: left;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mynav">
+            <a class="navbar-brand" href="./index.html"><img class="logonav" src="./logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover-container d-flex w-100 vh-100 p-3 mx-auto flex-column">
+
+        <main class="px-3 cover-styles">
+            <h1>Tour Packages</h1>
+            <p class="lead">From adventures in the wild to city escapes & cultural tours to annual events, these holiday
+                packages
+                offer the best of Sri Lanka. As the leading travel agent in Sri Lanka we provide great value for money
+                and the
+                convenience of having all your travel needs taken care of be it air tickets, accommodation, transport,
+                meals or
+                airport transfers.</p>
+        </main>
+    </div>
+
+
+
+    <div class="para-container1">
+        <h2>How can we Help?</h2>
+        <p class="p1">Ceylon Travels provides a wide array of tour packages in Sri Lanka. Travel in luxury with your own
+            private vehicle, trek by foot or even fly around our fascinating island. We cater to adventurous travelers
+            with our
+            ‘Sri Lanka by Cycle’. For those who want to feel pampered our ‘Ayurvedic Journey’ or spa treatments are on
+            hand
+            while heritage and culture are a-plenty on the ‘Southern Riveria’ tour. Don’t miss out on frolicking with
+            the
+            dolphins or re-walking in the steps of Rama, Sita and Ravana – book now with Ceylon Travels.</p>
+    </div>
+
+
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col d-flex">
+                    <div class="card w-100">
+                        <img src="./tourimg1.jpg" alt="sigiriya" class="bd-placeholder-img card-img-top" width="100%"
+                            height="225" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body d-flex flex-column">
+                            <strong>Authentic Ceylon</strong>
+                            <p class="card-text mb-2">Authentic Ceylon is the tour that takes you back in time through
+                                the
+                                natural as well as man-made wonders of an island nation</p>
+                            <ul class="mb-0">
+                                <li>Scenic Sri Lanka</li>
+                                <li>World's End</li>
+                                <li>Travel like a Local</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card w-100">
+                        <img src="./tourimg2.jpeg" alt="beach" class="bd-placeholder-img card-img-top" width="100%"
+                            height="225" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body d-flex flex-column">
+                            <strong>Barefoot Luxury</strong>
+                            <p class="card-text mb-2">Relax on the beaches of Ahungalla or take off to the Southern
+                                Rivier where
+                                luxury camping in Yala and a visit to a tea plantation is on the cards. Otherwise, begin
+                                and
+                                conclude your stay by teeing off on a golf course on the Colonial Golf Clubs of Ceylon.
+                            </p>
+                            <ul class="mb-0">
+                                <li>Luxury Beaches</li>
+                                <li>Southern Riviera</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card w-100">
+                        <img src="./tourimg3.jpeg" alt="cycling" class="bd-placeholder-img card-img-top" width="100%"
+                            height="225" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body d-flex flex-column">
+                            <strong>Adventurous Spirit</strong>
+                            <p class="card-text mb-2">With Ceylon Travels you can travel by foot in search of
+                                mystical
+                                waterfalls, trail through the jungles, go diving near ship wrecks and coral reefs and
+                                cycle
+                                through the coastal towns in search of the hidden treasures of Sri Lanka.</p>
+                            <ul class="mb-0">
+                                <li>Trails & Treks</li>
+                                <li>Water Sports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex">
+                    <div class="card w-100">
+                        <img src="./tourimg4.jpg" alt="elephants" class="bd-placeholder-img card-img-top" width="100%"
+                            height="225" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body d-flex flex-column">
+                            <strong>Following The Wild</strong>
+                            <p class="card-text mb-2">Jungles of Yala and Udawalawe bringing you into contact with
+                                elephants,
+                                leopards and sloth bear. Spend 02 days with the world’s largest mammal the blue whale
+                                and
+                                join the dolphins in their games on our whale and dolphin watching tours.</p>
+                            <ul class="mb-0">
+                                <li>Sri Lanka's Big Five</li>
+                                <li>Whale Watching</li>
+                                <li>Sea Of Ceylon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card w-100">
+                        <img src="./tourimg5.jpg" alt="cooking" class="bd-placeholder-img card-img-top" width="100%"
+                            height="225" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body d-flex flex-column">
+                            <strong>Day Tours and Experiences</strong>
+                            <p class="card-text mb-2">Connect with the island’s culture and its people through our
+                                innovative
+                                collection of private things to do in Sri Lanka.</p>
+                            <ul class="mb-0">
+                                <li>Colombo City Tour</li>
+                                <li>Bentota City Tour</li>
+                                <li>Galle City Tour</li>
+                                <li>Kandy City Tour</li>
+                                <li>Sigiriya City Tour</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <div class="card w-100">
+                        <img src="./tourimg6.jpg" alt="buddha statue" class="bd-placeholder-img card-img-top"
+                            width="100%" height="225" preserveAspectRatio="xMidYMid slice">
+                        <div class="card-body d-flex flex-column">
+                            <strong>Educational Holidays</strong>
+                            <p class="card-text mb-2">Providing opportunities to create learning through direct field
+                                experience.
+                                All these educational trips of Sri Lanka are conducted by professionally qualified
+                                subject
+                                specialists from different disciplines such as Anthropology / archeology / agriculture /
+                                biology / sociology etc.</p>
+                            <ul class="mb-0">
+                                <li> Architecture</li>
+                                <li> Archaeological</li>
+                                <li>Ancient Culture</li>
+                                <li>Kingdom of Kandy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Ceylon Travels, All Rights Reserved</p>
+
+            <a href="./index.html"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Bootstrap">
+                <img src="./logo.png" alt="logo" class="bi me-2" width="220px" height="200px" aria-hidden="true">
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="./tours.html" class="nav-link px-2 text-body-secondary">Tours</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
