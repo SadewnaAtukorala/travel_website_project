@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .logonav {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .mynav {
+            background-color: #f8f8f9;
+        }
+
+        .myitem {
+            margin: 0 20px;
+        }
+
+        .mylink {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .mylink:hover {
+            background-color: rgb(209, 227, 246);
+            padding: 5px;
+        }
+
+        .cover-styles {
+            padding: 20%;
+            margin-left: 10%;
+        }
+
+        .cover-container {
+            background-image: url("./aboutcover.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            color: white;
+        }
+
+        .para-container1 {
+            padding: 120px 100px 100px 150px;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            background-color: rgb(237, 249, 253);
+        }
+
+        .p1 {
+            font-size: 20px;
+            line-height: 1.75;
+            text-align: justify;
+            max-width: 600px;
+            vertical-align: baseline;
+        }
+
+        .image-block {
+            display: flex;
+            width: 100%;
+            gap: 30px;
+            justify-content: center;
+            padding: 10%;
+        }
+
+        .imgb {
+            height: 50%;
+            width: 50%;
+        }
+
+        @media (max-width: 500px) {
+            .para-container1 {
+                flex-direction: column;
+                gap: 0;
+                padding-left: 10px;
+                max-width: auto;
+            }
+
+            .p1 {
+                text-align: left;
+            }
+
+            .image-block {
+                flex-direction: column;
+                width: auto;
+            }
+
+            .imgb {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid mynav">
+            <a class="navbar-brand" href="./index.html"><img class="logonav" src="./logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item myitem">
+                        <a class="nav-link mylink" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover-container d-flex w-100 vh-100 p-3 mx-auto flex-column">
+
+        <main class="px-3 cover-styles">
+            <h1>Who we are?</h1>
+            <p class="lead">We are a Sri Lanka Tourism Development Authority & Sri Lanka Civil Aviation Authority
+                approved travel agent.</p>
+        </main>
+    </div>
+
+    <div class="para-container1">
+        <h2>Our Story</h2>
+        <p class="p1">
+            Ceylon Travels is a registered locally owned Sri Lanka Tourist Board approved Destination Management
+            Company especially handle Educational holidays / Wild Life Photography Tours and Luxury Tailor
+            made family holidays.</p>
+
+        <p class="p1">
+            Our expertise and passion to explore the unknown treasures of tourism let you unleash the essence of our
+            country. Whether its adventure, history, spiritualism or natures we will provide you the unmatchable
+            experience, customized tours and personalized service on its best and world class.</p>
+    </div>
+
+    <div class="image-block">
+        <img src="./aboutimg1.jpg" class="imgb" alt="nine arch">
+        <img src="./aboutimg2.jpg" class="imgb" alt="fishing">
+    </div>
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Ceylon Travels, All Rights Reserved</p>
+
+            <a href="./index.html"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Bootstrap">
+                <img src="./logo.png" alt="logo" class="bi me-2" width="220px" height="200px" aria-hidden="true">
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="./tours.html" class="nav-link px-2 text-body-secondary">Tours</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
